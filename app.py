@@ -12,8 +12,9 @@ app = Flask(__name__)
 def predict():
 	print('Test')
 	args = request.json
-	labels = classifier(args['text'])
-	return json.dumps({'predictions': labels})
+	print(args)
+	#labels = classifier(args['text'])
+	#return json.dumps({'predictions': labels})
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
