@@ -13,8 +13,13 @@ def predict():
 	print('Tes')
 	args = request.json
 	print(args)
+	predictions = {
+		value: classifier(value)
+		for value in args.values()
+	}
+	print(predictions)
 	#labels = classifier(args['text'])
-	#return json.dumps({'predictions': labels})
+	return json.dumps(predictions)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
