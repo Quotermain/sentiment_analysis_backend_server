@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route('/predict', methods=['POST'])
 def predict():
-	print('Test')
+	print('Tes')
 	args = request.json
 	print(args)
 	#labels = classifier(args['text'])
