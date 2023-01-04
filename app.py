@@ -18,7 +18,6 @@ def predict():
 		for value in args.values()
 	}
 	print(predictions)
-	#labels = classifier(args['text'])
 	return json.dumps(predictions)
 
 if __name__ == "__main__":
