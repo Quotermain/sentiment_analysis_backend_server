@@ -3,11 +3,11 @@ pipeline {
 
     stages {
 
-        stage('clear known_hosts') {
-            steps {
-              sh "./clear_known_hosts.sh"
-            }
-        }
+        // stage('clear known_hosts') {
+        //     steps {
+        //       sh "./clear_known_hosts.sh"
+        //     }
+        // }
 
         stage('build') {
           steps {
